@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="slider.css" />
+    <title>Carousel Component</title>
+  </head>
+  <body>
+    <div class="overflow">
+      <div class="slider">
+        <button class="btn" id="btn-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+
+        <button class="btn" id="btn-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+        <div class="dots">
+          <button class="dot dot-fill">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+        </div>
+        <!-- SLIDE CONTAINER -->
+        <ul class="slides-container" id="slides-container">
+          <!-- SLIDE 1 -->
+          <li class="slide slide-1">
+            <img src="allie/image-3.jpg" alt="Maria de Almeida" />
+            <blockquote class="testimonial">
+              <p class="testimonial-text">
+                Snake slithers likes to shit on my bed and be an asshole. still
+                love him tho
+              </p>
+              <p class="testimonial-author">Arsen</p>
+              <p class="testimonial-job">snek</p>
+            </blockquote>
+          </li>
+          <!-- SLIDE 2 -->
+          <li class="slide slide-2">
+            <img src="/allie/image-2.jpg" alt="Maria de Almeida" />
+            <blockquote class="testimonial">
+              <p class="testimonial-text">
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+                hic, reiciendis sint laudantium, perspiciatis blanditiis eveniet
+                ullam in eum, nostrum quasas."
+              </p>
+              <p class="testimonial-author">Maria de Almeida</p>
+              <p class="testimonial-job">Dog person</p>
+            </blockquote>
+          </li>
+          <!-- SLIDE 3 -->
+          <li class="slide slide-3">
+            <img src="allie/image-4.png" alt="Maria de Almeida" />
+            <blockquote class="testimonial">
+              <p class="testimonial-text">
+                "DB likes to jump and fall off things and climb as high as
+                possible"
+              </p>
+              <p class="testimonial-author">Maria de Almeida</p>
+              <p class="testimonial-job">Dog person</p>
+            </blockquote>
+          </li>
+          <!-- SLIDE 4 -->
+          <li class="slide slide-4" style="transform: translateX()">
+            <img src="allie/image-5.png" alt="Maria de Almeida" />
+            <blockquote class="testimonial">
+              <p class="testimonial-text">
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+                hic, reiciendis sint laudantium, perspiciatis blanditiis eveniet
+                ullam in eum, nostrum quasas."
+              </p>
+              <p class="testimonial-author">Maria de Almeida</p>
+              <p class="testimonial-job">Dog person</p>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="slider.js"></script>
+</html>
