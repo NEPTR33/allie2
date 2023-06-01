@@ -49,6 +49,9 @@ h2 {
 
 .button {
   background-color: #087f5b;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1em;
 }
 
 .reptile-title {
@@ -131,18 +134,18 @@ header {
   justify-self: center;
   border: none;
   color: white;
-  padding: 15px;
   font-size: 16px;
   letter-spacing: 0.8px;
-  width: 160px;
-  height: 45px;
+  width: 144px;
+  height: 40px;
   border-radius: 8px;
+  line-height: 10px;
+  padding: 0;
 }
 /* REPTILE SECTION */
 .reptile-section {
   display: flex;
   flex-direction: column;
-  gap: 64px;
   padding-top: 44px;
 }
 
@@ -173,13 +176,33 @@ header {
   grid-column: 2;
 }
 
+.about-me {
+  margin-bottom: 68px;
+}
+
 .slider-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   gap: 12px;
   padding-left: 24px;
+  position: relative;
+  margin-bottom: 196px;
+}
+.slider {
+  width: 860px;
+  background-color: #087f5b;
+  /* padding: 32px;
+          padding-left: 86px;
+          padding-right: 48px; */
+  padding: 32px 48px 32px 86px;
+  border-radius: 8px;
+  color: #f7f7f7;
+  position: absolute;
+  clip: rect(-80px 940px 600px -80px);
+}
+
+.title-2 {
+  margin-bottom: 44px;
 }
 /* .reptile-title:before {
   content: "";
@@ -193,20 +216,6 @@ header {
   padding-bottom: 10px;
   border-bottom: 2px solid #087f5b;
 } */
-
-.slider {
-  width: 860px;
-  background-color: #087f5b;
-  /* padding: 32px;
-          padding-left: 86px;
-          padding-right: 48px; */
-  padding: 32px 48px 32px 86px;
-  border-radius: 8px;
-  color: #f7f7f7;
-  position: relative;
-  overflow: clip;
-  overflow-clip-margin: content-box 140px;
-}
 
 #slides-container {
   display: flex;
@@ -350,10 +359,6 @@ header {
   border-radius: 8px;
 } */
 
-.title-2 {
-  margin-bottom: 32px;
-}
-
 /* //////////// */
 /* FORM SECTION */
 /* //////////// */
@@ -454,7 +459,8 @@ textarea {
   padding: 7px 35px;
   border: none;
   color: white;
-  padding: 15px;
+  line-height: 16px;
+  padding: 10px;
   font-size: 16px;
   letter-spacing: 0.8px;
   width: 160px;
