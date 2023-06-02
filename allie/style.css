@@ -563,6 +563,8 @@ input[type="checkbox"]:checked + label {
     padding: 8px;
     height: 32px;
     width: 70%;
+    position: relative;
+    right: 0;
   }
   .kid-img {
     display: none;
