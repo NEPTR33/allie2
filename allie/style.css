@@ -29,8 +29,9 @@ body {
 
 .container {
   padding-top: 68px;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 section {
@@ -442,7 +443,7 @@ textarea {
 
 .form-section {
   /* background-color: #f7f7f7; */
-  padding-bottom: 650px;
+  padding-bottom: 68px;
   padding-left: 24px;
 }
 
