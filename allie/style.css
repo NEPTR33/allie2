@@ -488,6 +488,8 @@ textarea {
     width: 85%;
     float: none;
     text-align: center;
+    position: relative;
+    right: 10px;
   }
 }
 
@@ -505,7 +507,10 @@ input[type="checkbox"]:checked + label {
   background-color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 414px) {
+  body {
+    border-bottom: 0;
+  }
   .reptile-title {
     margin-bottom: 10px;
     font-size: 28px;
@@ -539,6 +544,7 @@ input[type="checkbox"]:checked + label {
 
   .reptile-statement {
     font-size: 14px;
+    margin-bottom: 16px;
   }
   .about-me {
     text-align: center;
@@ -553,14 +559,17 @@ input[type="checkbox"]:checked + label {
   }
 
   .btn-1 {
-    display: none;
+    font-size: 12px;
+    padding: 8px;
+    height: 32px;
+    width: 70%;
   }
   .kid-img {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 414px) {
   .container {
     padding-top: 0;
   }
@@ -579,9 +588,96 @@ input[type="checkbox"]:checked + label {
   }
 
   .header-misc {
-    display: none;
+    font-size: 14px;
   }
   header {
     width: 414px;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .title-1 {
+    position: relative;
+    right: 6px;
+  }
+
+  .header-text-box {
+    left: 196px;
+  }
+
+  .btn-1 {
+    left: 0;
+  }
+  .reptile-statement {
+    position: relative;
+    right: 6px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .title-1 {
+    position: relative;
+    right: 6px;
+  }
+
+  .reptile-statement {
+    position: relative;
+    right: 6px;
+  }
+
+  .header-text-box {
+    left: 196px;
+  }
+
+  .btn-1 {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title-1 {
+    position: relative;
+    right: 14px;
+  }
+
+  .reptile-statement {
+    width: 300px;
+    position: relative;
+    right: -8px;
+  }
+
+  .header-text-box {
+    left: 180px;
+  }
+
+  .btn-1 {
+    left: 0;
+  }
+  .allie-pic {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .title-1 {
+    position: relative;
+    right: 18px;
+  }
+
+  .reptile-statement {
+    width: 300px;
+
+    position: relative;
+  }
+
+  .header-text-box {
+    left: 180px;
+  }
+
+  .btn-1 {
+    left: 0;
+  }
+  .allie-pic {
+    width: 320px;
   }
 }
