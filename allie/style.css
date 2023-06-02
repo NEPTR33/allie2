@@ -481,16 +481,6 @@ textarea {
   border-radius: 8px;
 }
 
-@media (max-width: 1260px) {
-  .button {
-    width: 85%;
-    float: none;
-    text-align: center;
-    position: relative;
-    right: 10px;
-  }
-}
-
 input[type="checkbox"] + label {
   color: #ccc;
   font-style: italic;
@@ -503,6 +493,24 @@ input[type="checkbox"]:checked + label {
 
 .input-box {
   background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1260px) {
+  .button {
+    width: 85%;
+    float: none;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media (max-width: 1260px) {
+  .button {
+    width: 85%;
+    float: none;
+    text-align: center;
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 414px) {
