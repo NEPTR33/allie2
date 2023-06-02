@@ -154,13 +154,18 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 8px;
-  padding-left: 24px;
+  /* padding-left: 24px; */
 }
 
 .text-box {
   align-self: center;
   text-align: left;
   width: 440px;
+}
+
+.title-1 {
+  margin-bottom: 32px;
+  position: relative;
 }
 
 .reptile-statement {
@@ -357,11 +362,6 @@ header {
   color: #f7f7f7;
 }
 
-.title-1 {
-  margin-bottom: 32px;
-  position: relative;
-}
-
 /* .title-1:before {
   content: "";
   position: absolute;
@@ -398,7 +398,6 @@ textarea:valid ~ label {
 @media only screen and (max-width: 768px) {
   .styled-input {
     width: 100%;
-    left: -23px;
   }
 }
 
@@ -458,7 +457,6 @@ textarea {
 .form-section {
   /* background-color: #f7f7f7; */
   padding-bottom: 68px;
-  padding-left: 24px;
 }
 
 .kid-img {
@@ -511,13 +509,13 @@ input[type="checkbox"]:checked + label {
   body {
     border-bottom: 0;
   }
+
   .reptile-title {
     margin-bottom: 10px;
     font-size: 28px;
   }
   .title-1 {
     position: relative;
-    right: -9px;
   }
 
   .reptile-section {
@@ -528,12 +526,13 @@ input[type="checkbox"]:checked + label {
   .allie-pic {
     width: 350px;
     position: relative;
-    right: 11px;
   }
 
   .text-box {
     width: 350px;
-    text-align: center;
+    text-align: left;
+    display: inline-block;
+    position: relative;
   }
   .head-title {
     display: none;
@@ -545,6 +544,7 @@ input[type="checkbox"]:checked + label {
   .reptile-statement {
     font-size: 14px;
     margin-bottom: 16px;
+    text-align: left;
   }
   .about-me {
     text-align: center;
@@ -554,7 +554,6 @@ input[type="checkbox"]:checked + label {
 
   .contact-title {
     position: relative;
-    right: 12px;
     margin-bottom: 0;
   }
 
@@ -612,19 +611,16 @@ input[type="checkbox"]:checked + label {
   }
   .reptile-statement {
     position: relative;
-    right: 6px;
   }
 }
 
 @media only screen and (max-width: 390px) {
   .title-1 {
     position: relative;
-    right: 6px;
   }
 
   .reptile-statement {
     position: relative;
-    right: 6px;
   }
 
   .header-text-box {
@@ -639,13 +635,11 @@ input[type="checkbox"]:checked + label {
 @media only screen and (max-width: 375px) {
   .title-1 {
     position: relative;
-    right: 14px;
   }
 
   .reptile-statement {
     width: 300px;
     position: relative;
-    right: -8px;
   }
 
   .header-text-box {
@@ -660,16 +654,15 @@ input[type="checkbox"]:checked + label {
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .title-1 {
-    position: relative;
-    right: 18px;
+@media only screen and (max-width: 361px) {
+  .text-box {
+    align-self: center;
   }
 
   .reptile-statement {
     width: 300px;
-
-    position: relative;
+    text-align: left;
+    display: inline-block;
   }
 
   .header-text-box {

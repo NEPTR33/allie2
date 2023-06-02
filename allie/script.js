@@ -74,7 +74,7 @@ document.addEventListener("keydown", function (e) {
 ////////////////////////
 //FORM
 ////////////////////////
-// const btn2 = document.querySelector(".btn-2");
-// btn2.addEventListener("click", function (e) {
-//   window.location.replace("http://127.0.0.1:5500/allie/redirect.html");
-// });
+const btn2 = document.querySelector(".btn-2");
+btn2.addEventListener("click", function (e) {
+  window.location.replace("http://127.0.0.1:5500/allie/redirect.html");
+});
