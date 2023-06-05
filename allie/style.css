@@ -600,7 +600,7 @@ input[type="checkbox"]:checked + label {
 
   .reptile-title {
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 36px;
   }
   .title-1 {
     position: relative;
@@ -608,7 +608,7 @@ input[type="checkbox"]:checked + label {
 
   .reptile-section {
     padding-top: 44px;
-    padding-bottom: 44px;
+    padding-bottom: 64px;
   }
 
   .head-title {
@@ -667,5 +667,9 @@ input[type="checkbox"]:checked + label {
 
   .header-misc {
     font-size: 14px;
+  }
+
+  .input-container {
+    padding-bottom: 24px;
   }
 }
