@@ -111,9 +111,24 @@ btnRight.addEventListener("click", function (e) {
 });
 
 ////////////////////////
-//FORM
+//Reveal sections
 ////////////////////////
-const btn2 = document.querySelector(".btn-2");
-btn2.addEventListener("click", function (e) {
-  window.location.replace("http://127.0.0.1:5500/allie/redirect.html");
+
+const allSections = document.querySelectorAll(".section");
+console.log(allSections);
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.35,
+});
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
 });

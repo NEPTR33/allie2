@@ -28,7 +28,6 @@ body {
 }
 
 .container {
-  padding-top: 68px;
   max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
@@ -36,6 +35,18 @@ body {
 
 section {
   padding-bottom: 96px;
+}
+
+.section {
+  padding: 5rem 1rem;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .button:hover {
@@ -180,10 +191,6 @@ header {
   margin-left: auto;
   grid-row: 1;
   grid-column: 2;
-}
-
-.about-me {
-  margin-bottom: 68px;
 }
 
 .slider-container {
@@ -492,6 +499,12 @@ input[type="checkbox"]:checked + label {
 }
 
 @media (max-width: 1260px) {
+  .section {
+    padding: 0;
+    border-top: none;
+
+    transition: transform 1s, opacity 1s;
+  }
   .allie-pic-web {
     display: none;
   }
@@ -630,10 +643,11 @@ input[type="checkbox"]:checked + label {
   .container {
     padding-top: 0;
   }
+
   .header-text-box {
     transform: none;
     width: 250px;
-    height: 42%;
+    height: 38%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -648,7 +662,7 @@ input[type="checkbox"]:checked + label {
   }
 
   .header-img {
-    height: 500px;
+    height: 720px;
   }
 
   .header-misc {
