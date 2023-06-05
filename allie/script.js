@@ -3,8 +3,6 @@
 ////////////////////////
 const btn1 = document.querySelector(".btn-1");
 const formSection = document.querySelector(".form-section");
-console.log(formSection);
-
 btn1.addEventListener("click", function (e) {
   formSection.scrollIntoView({ behavior: "smooth" });
 });
@@ -71,6 +69,47 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevSlide();
   if (e.key === "ArrowRight") nextSlide();
 });
+
+////////////////////////
+//SLIDER MOBILE
+////////////////////////
+const btnLeft = document.querySelector("#btn-left-mobile");
+const btnRight = document.querySelector("#btn-right-mobile");
+const slidesMobile = document.querySelectorAll(".mobile-slideshow");
+let curImg = 0;
+const displayImg = function (n) {
+  slidesMobile[n].classList.remove("hidden");
+};
+const removeImg = function (n) {
+  slidesMobile[n].classList.add("hidden");
+};
+const updateImg = function () {
+  for (let i = 0; i < slidesMobile.length; i++) {
+    if (i === curImg) {
+      displayImg(i);
+    }
+    if (i != curImg) {
+      removeImg(i);
+    }
+  }
+};
+displayImg(curImg);
+
+btnLeft.addEventListener("click", function (e) {
+  curImg--;
+  if (curImg < 0) {
+    curImg = slidesMobile.length - 1;
+  }
+  updateImg();
+});
+btnRight.addEventListener("click", function (e) {
+  curImg++;
+  if (curImg > slidesMobile.length - 1) {
+    curImg = 0;
+  }
+  updateImg();
+});
+
 ////////////////////////
 //FORM
 ////////////////////////
