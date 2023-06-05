@@ -24,6 +24,7 @@ body {
   background-color: #f7f7f7;
   text-align: center;
   border-bottom: 8px solid #087f5b;
+  touch-action: pan-x pan-y;
   /* border-top: 66px solid #141414; */
 }
 

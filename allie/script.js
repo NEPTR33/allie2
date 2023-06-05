@@ -9,11 +9,6 @@ btn1.addEventListener("click", function (e) {
     section.classList.remove("section--hidden");
   });
 });
-
-document.addEventListener("gesturestart", function (e) {
-  e.preventDefault();
-});
-
 ////////////////////////
 //SLIDER
 ////////////////////////
