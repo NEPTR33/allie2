@@ -10,6 +10,10 @@ btn1.addEventListener("click", function (e) {
   });
 });
 
+document.addEventListener("gesturestart", function (e) {
+  e.preventDefault();
+});
+
 ////////////////////////
 //SLIDER
 ////////////////////////
