@@ -5,6 +5,9 @@ const btn1 = document.querySelector(".btn-1");
 const formSection = document.querySelector(".form-section");
 btn1.addEventListener("click", function (e) {
   formSection.scrollIntoView({ behavior: "smooth" });
+  allSections.forEach(function (section) {
+    section.classList.remove("section--hidden");
+  });
 });
 
 ////////////////////////
@@ -115,18 +118,16 @@ btnRight.addEventListener("click", function (e) {
 ////////////////////////
 
 const allSections = document.querySelectorAll(".section");
-console.log(allSections);
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hidden");
 };
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.35,
+  threshold: 0.36,
 });
 allSections.forEach(function (section) {
   sectionObserver.observe(section);

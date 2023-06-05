@@ -40,8 +40,7 @@ section {
 .section {
   padding: 5rem 1rem;
   border-top: 1px solid #ddd;
-
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .section--hidden {
@@ -80,7 +79,7 @@ h2 {
 
 /* COMPONENT STYLES */
 .head-title {
-  display: flex;
+  display: none;
   color: #f7f7f7;
   background-color: #343a40;
   padding: 16px;
@@ -100,6 +99,7 @@ header {
   text-align: center;
   color: #f7f7f7;
   background-color: #f7f7f7;
+  margin-bottom: 18px;
   /* border-top: 66px solid #141414; */
 }
 
@@ -113,8 +113,8 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #161616de;
-  width: 39%;
-  height: 50%;
+  width: 38%;
+  height: 48%;
   border-radius: 8px;
   z-index: 2;
   box-shadow: 0 20px 20px 0 rgba(17, 17, 17, 0.459);
@@ -125,7 +125,8 @@ header {
   object-fit: cover;
   width: 100%;
   overflow-x: visible;
-  height: 650px;
+  height: 760px;
+  overflow: visible;
 }
 .header-misc {
   grid-row: 1;
@@ -137,7 +138,7 @@ header {
   font-weight: 400;
   grid-row: 2;
   justify-self: center;
-  width: 90%;
+  width: 80%;
 }
 
 .btn-1 {
@@ -158,14 +159,12 @@ header {
 .reptile-section {
   display: flex;
   flex-direction: column;
-  padding-top: 44px;
+  /* padding-top: 44px; */
 }
 
 .about-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-radius: 8px;
-  /* padding-left: 24px; */
 }
 
 .text-box {
@@ -662,7 +661,7 @@ input[type="checkbox"]:checked + label {
   }
 
   .header-img {
-    height: 720px;
+    height: 700px;
   }
 
   .header-misc {
